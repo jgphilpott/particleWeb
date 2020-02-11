@@ -54,7 +54,7 @@ summonParticleWeb(count=number)
 You can also specify the colors you want in an array, like so:
 
 ```
-summonParticleWeb(colors=["red", "blue", "yellow"])
+summonParticleWeb(count=number, colors=["red", "blue", "yellow"])
 ```
 
 You can use HEX and RGBA codes as well as common color names.
@@ -64,5 +64,5 @@ You can use HEX and RGBA codes as well as common color names.
 If you want you can also use a different ID for the canvas, like so:
 
 ```
-summonParticleWeb(canvas="wallpaper")
+summonParticleWeb(count=number, colors=["red", "blue", "yellow"], canvas="wallpaper")
 ```
