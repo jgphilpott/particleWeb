@@ -8,7 +8,7 @@ This particle web generator is a refactored version of [Jacquelin Clément](http
 
 # Usage
 
-To get started download the [particleWeb.js](https://raw.githubusercontent.com/jgphilpott/particleWeb/master/particleWeb.js) file in this repo and add a script tag in your HTML:
+To get started download the [particleWeb.js](https://raw.githubusercontent.com/jgphilpott/particleWeb/master/particleWeb.js) file in this repository and add a script tag to your HTML:
 
 ```
 <script type="text/javascript" src="particleWeb.js"></script>
@@ -20,7 +20,7 @@ Next, be sure to add a canvas element to your HTML like this:
 <canvas id="canvas"></canvas>
 ```
 
-The canvas size and location is up to you but you probably want a full screen canvas so I recommend the following styling:
+The size and location of the canvas is up to you but you probably want a full screen canvas so I recommend the following styling:
 
 ```
 #canvas {
@@ -30,6 +30,7 @@ The canvas size and location is up to you but you probably want a full screen ca
   height: 100%;
 }
 ```
+
 Finally, summon the particle web with the following function call:
 
 ```
@@ -45,7 +46,7 @@ If everything worked you should see 42 black particles bouncing around your HTML
 You can optionally specify the number of particles, like so:
 
 ```
-summonParticleWeb(number)
+summonParticleWeb(count=number)
 ```
 
 ## Colors
@@ -53,15 +54,15 @@ summonParticleWeb(number)
 You can also specify the colors you want in an array, like so:
 
 ```
-summonParticleWeb(number, ["red", "blue", "yellow"])
+summonParticleWeb(colors=["red", "blue", "yellow"])
 ```
 
 You can use HEX and RGBA codes as well as common color names.
 
 ## Canvas
 
-If you want you can also use a different ID for the canvas like so:
+If you want you can also use a different ID for the canvas, like so:
 
 ```
-summonParticleWeb(number, ["red", "blue", "yellow"], "background")
+summonParticleWeb(canvas="wallpaper")
 ```
