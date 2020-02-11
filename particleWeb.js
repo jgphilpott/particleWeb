@@ -1,13 +1,13 @@
 // Credit: https://codepen.io/jacquelinclem/pen/udnwI
 // GitHub: https://github.com/jacquelinclem
 
-function summonParticleWeb(count=42, colors=["#000000"]) {
+function summonParticleWeb(count=42, colors=["#000000"], canvas="canvas") {
 
   particles = []
   particlesCount = count
   colors = colors
 
-  canvas = document.getElementById("canvas")
+  canvas = document.getElementById(canvas)
   dpi = window.devicePixelRatio || 1
 
   context = canvas.getContext("2d")
